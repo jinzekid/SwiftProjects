@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "93CA3330BC7AE080F1CDED2C4E026FD25D6C8C3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "93CA3330BC7AE080F1CDED2C4E026FD25D6C8C3D" : 9223372036854775807,
+    "9A36CB922F3A231E30D16FAD82B3821D5F7C3D04" : 9223372036854775807,
+    "F5E65E1B27DF4BDE67021B49DFA270E400170411" : 9223372036854775807,
+    "31F61D37FA0E05F17C9C09F96F652B8EC64779B9" : 9223372036854775807,
+    "05FE91181C444C8CC412FEA649F183C5C7A9F844" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A4107B0B-318E-4B38-B7D2-90CAB6D7811D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "93CA3330BC7AE080F1CDED2C4E026FD25D6C8C3D" : "SwiftProjects\/",
+    "9A36CB922F3A231E30D16FAD82B3821D5F7C3D04" : "SwiftProjects\/youtube-iOS\/",
+    "F5E65E1B27DF4BDE67021B49DFA270E400170411" : "SwiftProjects\/SUFramework\/",
+    "31F61D37FA0E05F17C9C09F96F652B8EC64779B9" : "SwiftProjects\/firefox-ios\/",
+    "05FE91181C444C8CC412FEA649F183C5C7A9F844" : "SwiftProjects\/SwiftUtiliy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftProjects",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftProjects.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jinzekid\/SwiftUtiliy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "05FE91181C444C8CC412FEA649F183C5C7A9F844"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mozilla\/firefox-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31F61D37FA0E05F17C9C09F96F652B8EC64779B9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jinzekid\/SwiftProjects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93CA3330BC7AE080F1CDED2C4E026FD25D6C8C3D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jinzekid\/youtube-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A36CB922F3A231E30D16FAD82B3821D5F7C3D04"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jinzekid\/SUFramework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F5E65E1B27DF4BDE67021B49DFA270E400170411"
+    }
+  ]
+}

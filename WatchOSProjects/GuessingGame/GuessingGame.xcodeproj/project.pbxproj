@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B735EC5A1D1EA3220038CE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735EC591D1EA3220038CE01 /* AppDelegate.swift */; };
+		B735EC5C1D1EA3220038CE01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735EC5B1D1EA3220038CE01 /* ViewController.swift */; };
+		B735EC5F1D1EA3220038CE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B735EC5D1D1EA3220038CE01 /* Main.storyboard */; };
+		B735EC611D1EA3220038CE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B735EC601D1EA3220038CE01 /* Assets.xcassets */; };
+		B735EC641D1EA3220038CE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B735EC621D1EA3220038CE01 /* LaunchScreen.storyboard */; };
+		B735EC691D1EA3230038CE01 /* GuessingGame WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B735EC681D1EA3230038CE01 /* GuessingGame WatchKit App.app */; };
+		B735EC6F1D1EA3230038CE01 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B735EC6D1D1EA3230038CE01 /* Interface.storyboard */; };
+		B735EC711D1EA3230038CE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B735EC701D1EA3230038CE01 /* Assets.xcassets */; };
+		B735EC781D1EA3230038CE01 /* GuessingGame WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B735EC771D1EA3230038CE01 /* GuessingGame WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B735EC7F1D1EA3230038CE01 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735EC7E1D1EA3230038CE01 /* InterfaceController.swift */; };
+		B735EC811D1EA3230038CE01 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735EC801D1EA3230038CE01 /* ExtensionDelegate.swift */; };
+		B735EC831D1EA3230038CE01 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735EC821D1EA3230038CE01 /* NotificationController.swift */; };
+		B735EC851D1EA3230038CE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B735EC841D1EA3230038CE01 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B735EC6A1D1EA3230038CE01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B735EC4E1D1EA3220038CE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B735EC671D1EA3230038CE01;
+			remoteInfo = "GuessingGame WatchKit App";
+		};
+		B735EC791D1EA3230038CE01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B735EC4E1D1EA3220038CE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B735EC761D1EA3230038CE01;
+			remoteInfo = "GuessingGame WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B735EC8C1D1EA3230038CE01 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B735EC781D1EA3230038CE01 /* GuessingGame WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B735EC901D1EA3230038CE01 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B735EC691D1EA3230038CE01 /* GuessingGame WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B735EC561D1EA3220038CE01 /* GuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B735EC591D1EA3220038CE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B735EC5B1D1EA3220038CE01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B735EC5E1D1EA3220038CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B735EC601D1EA3220038CE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B735EC631D1EA3220038CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B735EC651D1EA3220038CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B735EC681D1EA3230038CE01 /* GuessingGame WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuessingGame WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B735EC6E1D1EA3230038CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B735EC701D1EA3230038CE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B735EC721D1EA3230038CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B735EC771D1EA3230038CE01 /* GuessingGame WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GuessingGame WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B735EC7D1D1EA3230038CE01 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B735EC7E1D1EA3230038CE01 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B735EC801D1EA3230038CE01 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B735EC821D1EA3230038CE01 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B735EC841D1EA3230038CE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B735EC861D1EA3230038CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B735EC531D1EA3220038CE01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B735EC741D1EA3230038CE01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B735EC4D1D1EA3220038CE01 = {
+			isa = PBXGroup;
+			children = (
+				B735EC581D1EA3220038CE01 /* GuessingGame */,
+				B735EC6C1D1EA3230038CE01 /* GuessingGame WatchKit App */,
+				B735EC7B1D1EA3230038CE01 /* GuessingGame WatchKit Extension */,
+				B735EC571D1EA3220038CE01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B735EC571D1EA3220038CE01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B735EC561D1EA3220038CE01 /* GuessingGame.app */,
+				B735EC681D1EA3230038CE01 /* GuessingGame WatchKit App.app */,
+				B735EC771D1EA3230038CE01 /* GuessingGame WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B735EC581D1EA3220038CE01 /* GuessingGame */ = {
+			isa = PBXGroup;
+			children = (
+				B735EC591D1EA3220038CE01 /* AppDelegate.swift */,
+				B735EC5B1D1EA3220038CE01 /* ViewController.swift */,
+				B735EC5D1D1EA3220038CE01 /* Main.storyboard */,
+				B735EC601D1EA3220038CE01 /* Assets.xcassets */,
+				B735EC621D1EA3220038CE01 /* LaunchScreen.storyboard */,
+				B735EC651D1EA3220038CE01 /* Info.plist */,
+			);
+			path = GuessingGame;
+			sourceTree = "<group>";
+		};
+		B735EC6C1D1EA3230038CE01 /* GuessingGame WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B735EC6D1D1EA3230038CE01 /* Interface.storyboard */,
+				B735EC701D1EA3230038CE01 /* Assets.xcassets */,
+				B735EC721D1EA3230038CE01 /* Info.plist */,
+			);
+			path = "GuessingGame WatchKit App";
+			sourceTree = "<group>";
+		};
+		B735EC7B1D1EA3230038CE01 /* GuessingGame WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B735EC7E1D1EA3230038CE01 /* InterfaceController.swift */,
+				B735EC801D1EA3230038CE01 /* ExtensionDelegate.swift */,
+				B735EC821D1EA3230038CE01 /* NotificationController.swift */,
+				B735EC841D1EA3230038CE01 /* Assets.xcassets */,
+				B735EC861D1EA3230038CE01 /* Info.plist */,
+				B735EC7C1D1EA3230038CE01 /* Supporting Files */,
+			);
+			path = "GuessingGame WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B735EC7C1D1EA3230038CE01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B735EC7D1D1EA3230038CE01 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B735EC551D1EA3220038CE01 /* GuessingGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B735EC911D1EA3230038CE01 /* Build configuration list for PBXNativeTarget "GuessingGame" */;
+			buildPhases = (
+				B735EC521D1EA3220038CE01 /* Sources */,
+				B735EC531D1EA3220038CE01 /* Frameworks */,
+				B735EC541D1EA3220038CE01 /* Resources */,
+				B735EC901D1EA3230038CE01 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B735EC6B1D1EA3230038CE01 /* PBXTargetDependency */,
+			);
+			name = GuessingGame;
+			productName = GuessingGame;
+			productReference = B735EC561D1EA3220038CE01 /* GuessingGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B735EC671D1EA3230038CE01 /* GuessingGame WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B735EC8D1D1EA3230038CE01 /* Build configuration list for PBXNativeTarget "GuessingGame WatchKit App" */;
+			buildPhases = (
+				B735EC661D1EA3230038CE01 /* Resources */,
+				B735EC8C1D1EA3230038CE01 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B735EC7A1D1EA3230038CE01 /* PBXTargetDependency */,
+			);
+			name = "GuessingGame WatchKit App";
+			productName = "GuessingGame WatchKit App";
+			productReference = B735EC681D1EA3230038CE01 /* GuessingGame WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B735EC761D1EA3230038CE01 /* GuessingGame WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B735EC891D1EA3230038CE01 /* Build configuration list for PBXNativeTarget "GuessingGame WatchKit Extension" */;
+			buildPhases = (
+				B735EC731D1EA3230038CE01 /* Sources */,
+				B735EC741D1EA3230038CE01 /* Frameworks */,
+				B735EC751D1EA3230038CE01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GuessingGame WatchKit Extension";
+			productName = "GuessingGame WatchKit Extension";
+			productReference = B735EC771D1EA3230038CE01 /* GuessingGame WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B735EC4E1D1EA3220038CE01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = YangLu;
+				TargetAttributes = {
+					B735EC551D1EA3220038CE01 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B735EC671D1EA3230038CE01 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B735EC761D1EA3230038CE01 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = B735EC511D1EA3220038CE01 /* Build configuration list for PBXProject "GuessingGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B735EC4D1D1EA3220038CE01;
+			productRefGroup = B735EC571D1EA3220038CE01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B735EC551D1EA3220038CE01 /* GuessingGame */,
+				B735EC671D1EA3230038CE01 /* GuessingGame WatchKit App */,
+				B735EC761D1EA3230038CE01 /* GuessingGame WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B735EC541D1EA3220038CE01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B735EC641D1EA3220038CE01 /* LaunchScreen.storyboard in Resources */,
+				B735EC611D1EA3220038CE01 /* Assets.xcassets in Resources */,
+				B735EC5F1D1EA3220038CE01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B735EC661D1EA3230038CE01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B735EC711D1EA3230038CE01 /* Assets.xcassets in Resources */,
+				B735EC6F1D1EA3230038CE01 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B735EC751D1EA3230038CE01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B735EC851D1EA3230038CE01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B735EC521D1EA3220038CE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B735EC5C1D1EA3220038CE01 /* ViewController.swift in Sources */,
+				B735EC5A1D1EA3220038CE01 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B735EC731D1EA3230038CE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B735EC831D1EA3230038CE01 /* NotificationController.swift in Sources */,
+				B735EC811D1EA3230038CE01 /* ExtensionDelegate.swift in Sources */,
+				B735EC7F1D1EA3230038CE01 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B735EC6B1D1EA3230038CE01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B735EC671D1EA3230038CE01 /* GuessingGame WatchKit App */;
+			targetProxy = B735EC6A1D1EA3230038CE01 /* PBXContainerItemProxy */;
+		};
+		B735EC7A1D1EA3230038CE01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B735EC761D1EA3230038CE01 /* GuessingGame WatchKit Extension */;
+			targetProxy = B735EC791D1EA3230038CE01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B735EC5D1D1EA3220038CE01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B735EC5E1D1EA3220038CE01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B735EC621D1EA3220038CE01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B735EC631D1EA3220038CE01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B735EC6D1D1EA3230038CE01 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B735EC6E1D1EA3230038CE01 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B735EC871D1EA3230038CE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B735EC881D1EA3230038CE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B735EC8A1D1EA3230038CE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GuessingGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YangLu.GuessingGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		B735EC8B1D1EA3230038CE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GuessingGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YangLu.GuessingGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		B735EC8E1D1EA3230038CE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = GuessingGame_WatchKit_Extension;
+				INFOPLIST_FILE = "GuessingGame WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = YangLu.GuessingGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		B735EC8F1D1EA3230038CE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = GuessingGame_WatchKit_Extension;
+				INFOPLIST_FILE = "GuessingGame WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = YangLu.GuessingGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		B735EC921D1EA3230038CE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GuessingGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YangLu.GuessingGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B735EC931D1EA3230038CE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GuessingGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YangLu.GuessingGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B735EC511D1EA3220038CE01 /* Build configuration list for PBXProject "GuessingGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B735EC871D1EA3230038CE01 /* Debug */,
+				B735EC881D1EA3230038CE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B735EC891D1EA3230038CE01 /* Build configuration list for PBXNativeTarget "GuessingGame WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B735EC8A1D1EA3230038CE01 /* Debug */,
+				B735EC8B1D1EA3230038CE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B735EC8D1D1EA3230038CE01 /* Build configuration list for PBXNativeTarget "GuessingGame WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B735EC8E1D1EA3230038CE01 /* Debug */,
+				B735EC8F1D1EA3230038CE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B735EC911D1EA3230038CE01 /* Build configuration list for PBXNativeTarget "GuessingGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B735EC921D1EA3230038CE01 /* Debug */,
+				B735EC931D1EA3230038CE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B735EC4E1D1EA3220038CE01 /* Project object */;
+}

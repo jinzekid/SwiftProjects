@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SUFramework/SUFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreImageUtility-master/CoreImageSwift/CoreImageSwift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:firefox-ios/Client.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:youtube-iOS/YouTube.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SwiftUtiliy/SwiftUtilityProject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Project12_RunLoopTest/Project12_RunLoopTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Project11_StateLab/Project11_StateLab.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Project10_SlowWorker/Project10_SlowWorker.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Project9_iCloudTest/Project9_iCloudTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Project8_SettingTest/Project8_SettingTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UniversalTest/UniversalTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Project5/Project5.xcodeproj">
+   </FileRef>
+</Workspace>
