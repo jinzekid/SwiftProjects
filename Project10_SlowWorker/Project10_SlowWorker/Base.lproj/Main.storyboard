@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project10_SlowWorker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JpB-Jz-vA4">
+                                <rect key="frame" x="20" y="175" width="560" height="277"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="7iO-y7-vsH"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvU-Sa-deu">
+                                <rect key="frame" x="208" y="83" width="184" height="42"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.58823529409999997" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="SPD-9c-CJ2"/>
+                                    <constraint firstAttribute="height" constant="42" id="U04-hy-43x"/>
+                                </constraints>
+                                <state key="normal" title="Start working">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doWork:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0b-dn-kRy"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JPn-5j-U2i">
+                                <rect key="frame" x="407" y="94" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JPn-5j-U2i" firstAttribute="centerY" secondItem="rvU-Sa-deu" secondAttribute="centerY" id="26W-z3-OV0"/>
+                            <constraint firstItem="rvU-Sa-deu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="4QM-9T-YN7"/>
+                            <constraint firstItem="JpB-Jz-vA4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K3Y-Z0-nxM"/>
+                            <constraint firstItem="JPn-5j-U2i" firstAttribute="leading" secondItem="rvU-Sa-deu" secondAttribute="trailing" constant="15" id="gtB-6n-6Qi"/>
+                            <constraint firstItem="JpB-Jz-vA4" firstAttribute="top" secondItem="rvU-Sa-deu" secondAttribute="bottom" constant="50" id="kEv-qV-waL"/>
+                            <constraint firstItem="rvU-Sa-deu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kS8-kN-mYB"/>
+                            <constraint firstItem="JpB-Jz-vA4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="unn-UW-9XH"/>
+                            <constraint firstAttribute="trailing" secondItem="JpB-Jz-vA4" secondAttribute="trailing" constant="20" id="yMb-WD-BCa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultsTextView" destination="JpB-Jz-vA4" id="ATl-AY-5jQ"/>
+                        <outlet property="spinner" destination="JPn-5j-U2i" id="fDi-AS-NrO"/>
+                        <outlet property="startButton" destination="rvU-Sa-deu" id="xhH-PH-7eO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="451"/>
+        </scene>
+    </scenes>
+</document>

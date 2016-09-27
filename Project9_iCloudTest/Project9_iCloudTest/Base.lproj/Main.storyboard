@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project9_iCloudTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCloud Service Status:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdI-58-IBR">
+                                <rect key="frame" x="20" y="74" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="egV-OY-c5E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW4-3v-0ni">
+                                <rect key="frame" x="20" y="131" width="560" height="45"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.58823529409999997" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="FgG-qA-Fc6"/>
+                                </constraints>
+                                <state key="normal" title="Save Document">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jTE-lD-cB3"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P1h-SX-Vgb">
+                                <rect key="frame" x="20" y="206" width="560" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="jC0-jL-HPB"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FdI-58-IBR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dkg-5h-NIy"/>
+                            <constraint firstItem="P1h-SX-Vgb" firstAttribute="top" secondItem="vW4-3v-0ni" secondAttribute="bottom" constant="30" id="GPm-IN-0FG"/>
+                            <constraint firstItem="vW4-3v-0ni" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lw2-6H-Zbv"/>
+                            <constraint firstItem="vW4-3v-0ni" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="TZl-HM-420"/>
+                            <constraint firstItem="FdI-58-IBR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Xak-ij-pUY"/>
+                            <constraint firstItem="FdI-58-IBR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="YHO-xG-6cZ"/>
+                            <constraint firstItem="P1h-SX-Vgb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="YxA-tu-LCU"/>
+                            <constraint firstAttribute="trailing" secondItem="FdI-58-IBR" secondAttribute="trailing" constant="20" id="kDJ-HV-XQn"/>
+                            <constraint firstItem="vW4-3v-0ni" firstAttribute="top" secondItem="FdI-58-IBR" secondAttribute="bottom" constant="17" id="l3P-lB-U0v"/>
+                            <constraint firstItem="P1h-SX-Vgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="waf-ue-gAb"/>
+                            <constraint firstAttribute="trailing" secondItem="P1h-SX-Vgb" secondAttribute="trailing" constant="20" id="xX3-vT-N4q"/>
+                            <constraint firstAttribute="trailing" secondItem="vW4-3v-0ni" secondAttribute="trailing" constant="20" id="xsf-7i-8E5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="documentContentView" destination="P1h-SX-Vgb" id="QF1-86-1CN"/>
+                        <outlet property="serviceStatus" destination="FdI-58-IBR" id="VON-TQ-e6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="451"/>
+        </scene>
+    </scenes>
+</document>

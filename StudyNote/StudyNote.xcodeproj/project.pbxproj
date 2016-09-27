@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186E20DA1C3B5A3C00EE95FC /* StudentInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E20D91C3B5A3C00EE95FC /* StudentInfoVC.swift */; };
+		186E20E61C3B67DB00EE95FC /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E20E51C3B67DB00EE95FC /* Student.swift */; };
+		186E20E91C3B6F3900EE95FC /* StudentShowInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E20E71C3B6F3900EE95FC /* StudentShowInfoCell.swift */; };
+		186E20EA1C3B6F3900EE95FC /* StudentShowInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186E20E81C3B6F3900EE95FC /* StudentShowInfoCell.xib */; };
+		1895B5FB1C39FB08006645CF /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895B5FA1C39FB08006645CF /* AppUtility.swift */; };
+		B780B15B1C38D6ED0017212D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780B15A1C38D6ED0017212D /* AppDelegate.swift */; };
+		B780B1601C38D6ED0017212D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780B15E1C38D6ED0017212D /* Main.storyboard */; };
+		B780B1631C38D6ED0017212D /* StudyNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B780B1611C38D6ED0017212D /* StudyNote.xcdatamodeld */; };
+		B780B1651C38D6ED0017212D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B780B1641C38D6ED0017212D /* Assets.xcassets */; };
+		B780B1681C38D6ED0017212D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780B1661C38D6ED0017212D /* LaunchScreen.storyboard */; };
+		B780B1731C38D6ED0017212D /* StudyNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780B1721C38D6ED0017212D /* StudyNoteTests.swift */; };
+		B780B17E1C38D6ED0017212D /* StudyNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780B17D1C38D6ED0017212D /* StudyNoteUITests.swift */; };
+		B780B18E1C38DD790017212D /* Login.plist in Resources */ = {isa = PBXBuildFile; fileRef = B780B18D1C38DD790017212D /* Login.plist */; };
+		B780B1911C38E1640017212D /* FileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780B1901C38E1640017212D /* FileUtility.swift */; };
+		B7F55EED1C39190E00E8841F /* SNLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F55EEC1C39190E00E8841F /* SNLoginVC.swift */; };
+		B7F55EF11C391A9000E8841F /* SNSudentsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F55EF01C391A9000E8841F /* SNSudentsListVC.swift */; };
+		B7F55EFD1C392B9D00E8841F /* StudentsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7F55EFC1C392B9D00E8841F /* StudentsList.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B780B16F1C38D6ED0017212D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B780B14F1C38D6ED0017212D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B780B1561C38D6ED0017212D;
+			remoteInfo = StudyNote;
+		};
+		B780B17A1C38D6ED0017212D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B780B14F1C38D6ED0017212D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B780B1561C38D6ED0017212D;
+			remoteInfo = StudyNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		186E20D91C3B5A3C00EE95FC /* StudentInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInfoVC.swift; sourceTree = "<group>"; };
+		186E20E51C3B67DB00EE95FC /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		186E20E71C3B6F3900EE95FC /* StudentShowInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentShowInfoCell.swift; sourceTree = "<group>"; };
+		186E20E81C3B6F3900EE95FC /* StudentShowInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentShowInfoCell.xib; sourceTree = "<group>"; };
+		1895B5FA1C39FB08006645CF /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		B780B1571C38D6ED0017212D /* StudyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B780B15A1C38D6ED0017212D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B780B15F1C38D6ED0017212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B780B1621C38D6ED0017212D /* StudyNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudyNote.xcdatamodel; sourceTree = "<group>"; };
+		B780B1641C38D6ED0017212D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B780B1671C38D6ED0017212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B780B1691C38D6ED0017212D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B780B16E1C38D6ED0017212D /* StudyNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B780B1721C38D6ED0017212D /* StudyNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyNoteTests.swift; sourceTree = "<group>"; };
+		B780B1741C38D6ED0017212D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B780B1791C38D6ED0017212D /* StudyNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B780B17D1C38D6ED0017212D /* StudyNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyNoteUITests.swift; sourceTree = "<group>"; };
+		B780B17F1C38D6ED0017212D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B780B18D1C38DD790017212D /* Login.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Login.plist; sourceTree = "<group>"; };
+		B780B1901C38E1640017212D /* FileUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtility.swift; sourceTree = "<group>"; };
+		B7F55EEC1C39190E00E8841F /* SNLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNLoginVC.swift; sourceTree = "<group>"; };
+		B7F55EF01C391A9000E8841F /* SNSudentsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSudentsListVC.swift; sourceTree = "<group>"; };
+		B7F55EFC1C392B9D00E8841F /* StudentsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StudentsList.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B780B1541C38D6ED0017212D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B780B16B1C38D6ED0017212D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B780B1761C38D6ED0017212D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186E20D51C3B5A0800EE95FC /* SNStudentInfo */ = {
+			isa = PBXGroup;
+			children = (
+				186E20D61C3B5A0800EE95FC /* SNControllers */,
+			);
+			path = SNStudentInfo;
+			sourceTree = "<group>";
+		};
+		186E20D61C3B5A0800EE95FC /* SNControllers */ = {
+			isa = PBXGroup;
+			children = (
+				186E20D91C3B5A3C00EE95FC /* StudentInfoVC.swift */,
+			);
+			path = SNControllers;
+			sourceTree = "<group>";
+		};
+		186E20DB1C3B60CB00EE95FC /* SNViews */ = {
+			isa = PBXGroup;
+			children = (
+				186E20E71C3B6F3900EE95FC /* StudentShowInfoCell.swift */,
+				186E20E81C3B6F3900EE95FC /* StudentShowInfoCell.xib */,
+			);
+			path = SNViews;
+			sourceTree = "<group>";
+		};
+		186E20E21C3B672E00EE95FC /* SNModels */ = {
+			isa = PBXGroup;
+			children = (
+				186E20E51C3B67DB00EE95FC /* Student.swift */,
+			);
+			path = SNModels;
+			sourceTree = "<group>";
+		};
+		B780B14E1C38D6ED0017212D = {
+			isa = PBXGroup;
+			children = (
+				B7F55EE21C39178100E8841F /* SNModules */,
+				B780B18F1C38E1440017212D /* SNUtility */,
+				B780B18C1C38DD5E0017212D /* SNResources */,
+				B780B1591C38D6ED0017212D /* StudyNote */,
+				B780B1711C38D6ED0017212D /* StudyNoteTests */,
+				B780B17C1C38D6ED0017212D /* StudyNoteUITests */,
+				B780B1581C38D6ED0017212D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B780B1581C38D6ED0017212D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B780B1571C38D6ED0017212D /* StudyNote.app */,
+				B780B16E1C38D6ED0017212D /* StudyNoteTests.xctest */,
+				B780B1791C38D6ED0017212D /* StudyNoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B780B1591C38D6ED0017212D /* StudyNote */ = {
+			isa = PBXGroup;
+			children = (
+				B780B15A1C38D6ED0017212D /* AppDelegate.swift */,
+				B780B15E1C38D6ED0017212D /* Main.storyboard */,
+				B780B1641C38D6ED0017212D /* Assets.xcassets */,
+				B780B1661C38D6ED0017212D /* LaunchScreen.storyboard */,
+				B780B1691C38D6ED0017212D /* Info.plist */,
+				B780B1611C38D6ED0017212D /* StudyNote.xcdatamodeld */,
+			);
+			path = StudyNote;
+			sourceTree = "<group>";
+		};
+		B780B1711C38D6ED0017212D /* StudyNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				B780B1721C38D6ED0017212D /* StudyNoteTests.swift */,
+				B780B1741C38D6ED0017212D /* Info.plist */,
+			);
+			path = StudyNoteTests;
+			sourceTree = "<group>";
+		};
+		B780B17C1C38D6ED0017212D /* StudyNoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B780B17D1C38D6ED0017212D /* StudyNoteUITests.swift */,
+				B780B17F1C38D6ED0017212D /* Info.plist */,
+			);
+			path = StudyNoteUITests;
+			sourceTree = "<group>";
+		};
+		B780B18C1C38DD5E0017212D /* SNResources */ = {
+			isa = PBXGroup;
+			children = (
+				B780B18D1C38DD790017212D /* Login.plist */,
+				B7F55EFC1C392B9D00E8841F /* StudentsList.plist */,
+			);
+			path = SNResources;
+			sourceTree = "<group>";
+		};
+		B780B18F1C38E1440017212D /* SNUtility */ = {
+			isa = PBXGroup;
+			children = (
+				B780B1901C38E1640017212D /* FileUtility.swift */,
+				1895B5FA1C39FB08006645CF /* AppUtility.swift */,
+			);
+			path = SNUtility;
+			sourceTree = "<group>";
+		};
+		B7F55EE21C39178100E8841F /* SNModules */ = {
+			isa = PBXGroup;
+			children = (
+				186E20D51C3B5A0800EE95FC /* SNStudentInfo */,
+				B7F55EEE1C391A7000E8841F /* SNStudentsList */,
+				B7F55EE31C3917A200E8841F /* SNLogin */,
+			);
+			path = SNModules;
+			sourceTree = "<group>";
+		};
+		B7F55EE31C3917A200E8841F /* SNLogin */ = {
+			isa = PBXGroup;
+			children = (
+				B7F55EE41C3917C500E8841F /* SNControllers */,
+			);
+			path = SNLogin;
+			sourceTree = "<group>";
+		};
+		B7F55EE41C3917C500E8841F /* SNControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7F55EEC1C39190E00E8841F /* SNLoginVC.swift */,
+			);
+			path = SNControllers;
+			sourceTree = "<group>";
+		};
+		B7F55EEE1C391A7000E8841F /* SNStudentsList */ = {
+			isa = PBXGroup;
+			children = (
+				186E20E21C3B672E00EE95FC /* SNModels */,
+				186E20DB1C3B60CB00EE95FC /* SNViews */,
+				B7F55EEF1C391A7000E8841F /* SNControllers */,
+			);
+			path = SNStudentsList;
+			sourceTree = "<group>";
+		};
+		B7F55EEF1C391A7000E8841F /* SNControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7F55EF01C391A9000E8841F /* SNSudentsListVC.swift */,
+			);
+			path = SNControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B780B1561C38D6ED0017212D /* StudyNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B780B1821C38D6ED0017212D /* Build configuration list for PBXNativeTarget "StudyNote" */;
+			buildPhases = (
+				B780B1531C38D6ED0017212D /* Sources */,
+				B780B1541C38D6ED0017212D /* Frameworks */,
+				B780B1551C38D6ED0017212D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyNote;
+			productName = StudyNote;
+			productReference = B780B1571C38D6ED0017212D /* StudyNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B780B16D1C38D6ED0017212D /* StudyNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B780B1851C38D6ED0017212D /* Build configuration list for PBXNativeTarget "StudyNoteTests" */;
+			buildPhases = (
+				B780B16A1C38D6ED0017212D /* Sources */,
+				B780B16B1C38D6ED0017212D /* Frameworks */,
+				B780B16C1C38D6ED0017212D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B780B1701C38D6ED0017212D /* PBXTargetDependency */,
+			);
+			name = StudyNoteTests;
+			productName = StudyNoteTests;
+			productReference = B780B16E1C38D6ED0017212D /* StudyNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B780B1781C38D6ED0017212D /* StudyNoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B780B1881C38D6ED0017212D /* Build configuration list for PBXNativeTarget "StudyNoteUITests" */;
+			buildPhases = (
+				B780B1751C38D6ED0017212D /* Sources */,
+				B780B1761C38D6ED0017212D /* Frameworks */,
+				B780B1771C38D6ED0017212D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B780B17B1C38D6ED0017212D /* PBXTargetDependency */,
+			);
+			name = StudyNoteUITests;
+			productName = StudyNoteUITests;
+			productReference = B780B1791C38D6ED0017212D /* StudyNoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B780B14F1C38D6ED0017212D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = YangLu;
+				TargetAttributes = {
+					B780B1561C38D6ED0017212D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B780B16D1C38D6ED0017212D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B780B1561C38D6ED0017212D;
+					};
+					B780B1781C38D6ED0017212D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B780B1561C38D6ED0017212D;
+					};
+				};
+			};
+			buildConfigurationList = B780B1521C38D6ED0017212D /* Build configuration list for PBXProject "StudyNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B780B14E1C38D6ED0017212D;
+			productRefGroup = B780B1581C38D6ED0017212D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B780B1561C38D6ED0017212D /* StudyNote */,
+				B780B16D1C38D6ED0017212D /* StudyNoteTests */,
+				B780B1781C38D6ED0017212D /* StudyNoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B780B1551C38D6ED0017212D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B780B1681C38D6ED0017212D /* LaunchScreen.storyboard in Resources */,
+				B780B1651C38D6ED0017212D /* Assets.xcassets in Resources */,
+				186E20EA1C3B6F3900EE95FC /* StudentShowInfoCell.xib in Resources */,
+				B780B18E1C38DD790017212D /* Login.plist in Resources */,
+				B7F55EFD1C392B9D00E8841F /* StudentsList.plist in Resources */,
+				B780B1601C38D6ED0017212D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B780B16C1C38D6ED0017212D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B780B1771C38D6ED0017212D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B780B1531C38D6ED0017212D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B780B1911C38E1640017212D /* FileUtility.swift in Sources */,
+				B780B1631C38D6ED0017212D /* StudyNote.xcdatamodeld in Sources */,
+				186E20E91C3B6F3900EE95FC /* StudentShowInfoCell.swift in Sources */,
+				186E20E61C3B67DB00EE95FC /* Student.swift in Sources */,
+				186E20DA1C3B5A3C00EE95FC /* StudentInfoVC.swift in Sources */,
+				1895B5FB1C39FB08006645CF /* AppUtility.swift in Sources */,
+				B780B15B1C38D6ED0017212D /* AppDelegate.swift in Sources */,
+				B7F55EED1C39190E00E8841F /* SNLoginVC.swift in Sources */,
+				B7F55EF11C391A9000E8841F /* SNSudentsListVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B780B16A1C38D6ED0017212D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B780B1731C38D6ED0017212D /* StudyNoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B780B1751C38D6ED0017212D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B780B17E1C38D6ED0017212D /* StudyNoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B780B1701C38D6ED0017212D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B780B1561C38D6ED0017212D /* StudyNote */;
+			targetProxy = B780B16F1C38D6ED0017212D /* PBXContainerItemProxy */;
+		};
+		B780B17B1C38D6ED0017212D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B780B1561C38D6ED0017212D /* StudyNote */;
+			targetProxy = B780B17A1C38D6ED0017212D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B780B15E1C38D6ED0017212D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B780B15F1C38D6ED0017212D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B780B1661C38D6ED0017212D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B780B1671C38D6ED0017212D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B780B1801C38D6ED0017212D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B780B1811C38D6ED0017212D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B780B1831C38D6ED0017212D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StudyNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jinzekidly.StudyNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B780B1841C38D6ED0017212D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StudyNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jinzekidly.StudyNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B780B1861C38D6ED0017212D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StudyNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jinzekidly.StudyNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyNote.app/StudyNote";
+			};
+			name = Debug;
+		};
+		B780B1871C38D6ED0017212D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StudyNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jinzekidly.StudyNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyNote.app/StudyNote";
+			};
+			name = Release;
+		};
+		B780B1891C38D6ED0017212D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StudyNoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jinzekidly.StudyNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StudyNote;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B780B18A1C38D6ED0017212D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StudyNoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jinzekidly.StudyNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StudyNote;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B780B1521C38D6ED0017212D /* Build configuration list for PBXProject "StudyNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B780B1801C38D6ED0017212D /* Debug */,
+				B780B1811C38D6ED0017212D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B780B1821C38D6ED0017212D /* Build configuration list for PBXNativeTarget "StudyNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B780B1831C38D6ED0017212D /* Debug */,
+				B780B1841C38D6ED0017212D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B780B1851C38D6ED0017212D /* Build configuration list for PBXNativeTarget "StudyNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B780B1861C38D6ED0017212D /* Debug */,
+				B780B1871C38D6ED0017212D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B780B1881C38D6ED0017212D /* Build configuration list for PBXNativeTarget "StudyNoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B780B1891C38D6ED0017212D /* Debug */,
+				B780B18A1C38D6ED0017212D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B780B1611C38D6ED0017212D /* StudyNote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B780B1621C38D6ED0017212D /* StudyNote.xcdatamodel */,
+			);
+			currentVersion = B780B1621C38D6ED0017212D /* StudyNote.xcdatamodel */;
+			path = StudyNote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B780B14F1C38D6ED0017212D /* Project object */;
+}

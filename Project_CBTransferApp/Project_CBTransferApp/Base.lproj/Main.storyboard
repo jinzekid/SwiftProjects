@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RbY-OQ-VAo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IUY-WT-NvX">
+            <objects>
+                <navigationController id="RbY-OQ-VAo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="erS-Hv-Rf0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7wv-XJ-Nq7" kind="relationship" relationship="rootViewController" id="a5K-xY-XvK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypy-7C-EoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586" y="278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="agk-1k-Azn">
+            <objects>
+                <viewController id="7wv-XJ-Nq7" customClass="ViewController" customModule="Project_CBTransferApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d3e-qS-Iwn"/>
+                        <viewControllerLayoutGuide type="bottom" id="IOB-15-Y6a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UcX-7V-oL5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTF-vL-Rco">
+                                <rect key="frame" x="24" y="530" width="270" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uzZ-rA-Liy"/>
+                                </constraints>
+                                <state key="normal" title="Centrall Role"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="CJ4-yz-Xnm" kind="show" id="c0h-bb-RYA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzP-t8-h4p">
+                                <rect key="frame" x="306" y="530" width="270" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Nrp-o8-qA1"/>
+                                </constraints>
+                                <state key="normal" title="Peripheral Role"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="H4d-Wb-8uk" kind="show" id="a3B-Qa-Wvh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bluetooth Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfT-7k-wbc">
+                                <rect key="frame" x="209" y="278" width="183" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IOB-15-Y6a" firstAttribute="top" secondItem="hTF-vL-Rco" secondAttribute="bottom" constant="20" id="0rv-fJ-kbE"/>
+                            <constraint firstItem="hTF-vL-Rco" firstAttribute="leading" secondItem="UcX-7V-oL5" secondAttribute="leading" constant="24" id="1eD-33-aXi"/>
+                            <constraint firstItem="hTF-vL-Rco" firstAttribute="height" secondItem="gzP-t8-h4p" secondAttribute="height" id="A0L-OG-DCZ"/>
+                            <constraint firstAttribute="trailing" secondItem="gzP-t8-h4p" secondAttribute="trailing" constant="24" id="Boi-aZ-X2E"/>
+                            <constraint firstItem="IOB-15-Y6a" firstAttribute="top" secondItem="gzP-t8-h4p" secondAttribute="bottom" constant="20" id="Eeb-ab-tys"/>
+                            <constraint firstItem="hTF-vL-Rco" firstAttribute="width" secondItem="gzP-t8-h4p" secondAttribute="width" id="K5u-xa-bMm"/>
+                            <constraint firstItem="mfT-7k-wbc" firstAttribute="centerX" secondItem="UcX-7V-oL5" secondAttribute="centerX" id="V9Y-Br-69Y"/>
+                            <constraint firstItem="mfT-7k-wbc" firstAttribute="centerY" secondItem="UcX-7V-oL5" secondAttribute="centerY" id="W2u-dK-dhZ"/>
+                            <constraint firstItem="gzP-t8-h4p" firstAttribute="leading" secondItem="hTF-vL-Rco" secondAttribute="trailing" constant="12" id="vlI-M2-8rI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="geF-vN-1RB"/>
+                    <connections>
+                        <outlet property="bluetoothStateLabel" destination="mfT-7k-wbc" id="awW-Z4-QQf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IyP-Xq-cdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ne7-1z-m6m">
+            <objects>
+                <viewController id="CJ4-yz-Xnm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qJB-Kw-mcq"/>
+                        <viewControllerLayoutGuide type="bottom" id="aVb-1Z-aud"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lwl-r7-sbT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ie5-1j-dPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="-145"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9M5-M5-noR">
+            <objects>
+                <viewController id="H4d-Wb-8uk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mNn-bC-YzB"/>
+                        <viewControllerLayoutGuide type="bottom" id="f4A-PF-iwO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c8h-fh-t0X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DkR-vN-ftY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="575"/>
+        </scene>
+    </scenes>
+</document>

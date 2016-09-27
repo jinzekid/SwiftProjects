@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kYK-3K-bQK">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QA5-LO-3J5">
+            <objects>
+                <navigationController storyboardIdentifier="RootNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="kYK-3K-bQK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="haW-Nw-maH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUM-mb-sNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2809" y="620"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreImageSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wk8-zS-3Hr">
+                                <rect key="frame" x="200" y="50" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="DEm-S5-w0N"/>
+                                    <constraint firstAttribute="width" constant="200" id="Zal-WU-mTN"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DlQ-jg-3cq">
+                                <rect key="frame" x="0.0" y="320" width="600" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="aZO-Sx-FeK"/>
+                                </constraints>
+                            </tableView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bz1-rN-p9W">
+                                <rect key="frame" x="58" y="267" width="484" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yew-Pf-tEg"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="imageChangeSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lhu-Am-zhX"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-xv-h4C">
+                                <rect key="frame" x="26" y="90" width="82" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeImageEffectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7B-ia-mky"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DlQ-jg-3cq" secondAttribute="trailing" id="4up-HS-ofA"/>
+                            <constraint firstItem="wk8-zS-3Hr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9uZ-KH-XCX"/>
+                            <constraint firstItem="DlQ-jg-3cq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sxx-ZB-Rw4"/>
+                            <constraint firstAttribute="trailing" secondItem="bz1-rN-p9W" secondAttribute="trailing" constant="60" id="Xce-7Q-QzI"/>
+                            <constraint firstItem="wk8-zS-3Hr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="ayn-8h-FE4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DlQ-jg-3cq" secondAttribute="bottom" id="cjX-qF-HEB"/>
+                            <constraint firstItem="bz1-rN-p9W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="jwb-wc-nmt"/>
+                            <constraint firstItem="bz1-rN-p9W" firstAttribute="top" secondItem="wk8-zS-3Hr" secondAttribute="bottom" constant="17" id="xMT-FO-yp7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTableView" destination="DlQ-jg-3cq" id="jQE-QZ-cSn"/>
+                        <outlet property="displayImageView" destination="wk8-zS-3Hr" id="nca-l6-ElZ"/>
+                        <outlet property="imageChangeSlider" destination="bz1-rN-p9W" id="ofR-Lz-ZgF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>

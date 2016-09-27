@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project3_Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mQg-i5-Wos">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </mapView>
+                            <searchBar contentMode="redraw" placeholder="search your place" translatesAutoresizingMaskIntoConstraints="NO" id="1l1-Ac-cno">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8od-Iu-rec"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1l1-Ac-cno" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E8P-MY-Loe"/>
+                            <constraint firstItem="mQg-i5-Wos" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FV9-HD-v1L"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mQg-i5-Wos" secondAttribute="bottom" id="IJD-1j-QkW"/>
+                            <constraint firstItem="1l1-Ac-cno" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VEE-cg-JNZ"/>
+                            <constraint firstAttribute="trailing" secondItem="mQg-i5-Wos" secondAttribute="trailing" id="dNe-ao-FAv"/>
+                            <constraint firstItem="mQg-i5-Wos" firstAttribute="top" secondItem="1l1-Ac-cno" secondAttribute="bottom" id="oHl-8D-ec3"/>
+                            <constraint firstAttribute="trailing" secondItem="1l1-Ac-cno" secondAttribute="trailing" id="qkS-rG-uei"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="mQg-i5-Wos" id="1Sc-hO-ODh"/>
+                        <outlet property="searchBar" destination="1l1-Ac-cno" id="KWa-bx-VM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="368"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CIMainViewController" customModule="CoreImageSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="albumButton" destination="vk2-ZC-Ot4" id="boh-5o-Sbi"/>
+                <outlet property="videoButton" destination="YB9-7S-TjU" id="o3c-8A-N3h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIg-7S-NR3">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YB9-7S-TjU" customClass="BasicButton" customModule="CoreImageSwift" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.58823529409999997" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="7wJ-KI-tdJ"/>
+                        <constraint firstAttribute="width" secondItem="YB9-7S-TjU" secondAttribute="height" multiplier="2:1" constant="100" id="Xbr-b9-6bx"/>
+                    </constraints>
+                    <state key="normal" title="视频">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vk2-ZC-Ot4" customClass="BasicButton" customModule="CoreImageSwift" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.58823529409999997" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vk2-ZC-Ot4" secondAttribute="height" multiplier="2:1" constant="100" id="H0i-CN-UEg"/>
+                        <constraint firstAttribute="width" constant="200" id="HA9-4s-IcO"/>
+                    </constraints>
+                    <state key="normal" title="相册">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dIg-7S-NR3" secondAttribute="trailing" constant="94" id="LyD-Ny-Scc"/>
+                <constraint firstItem="YB9-7S-TjU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-52" id="TFb-kZ-pYQ"/>
+                <constraint firstItem="dIg-7S-NR3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bV1-xE-ee0"/>
+                <constraint firstItem="dIg-7S-NR3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="94" id="dHY-ik-0WK"/>
+                <constraint firstItem="YB9-7S-TjU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gYG-5F-uLm"/>
+                <constraint firstItem="vk2-ZC-Ot4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ma7-m8-RvD"/>
+                <constraint firstItem="dIg-7S-NR3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="qTf-cQ-dVt"/>
+                <constraint firstItem="vk2-ZC-Ot4" firstAttribute="top" secondItem="YB9-7S-TjU" secondAttribute="bottom" constant="42" id="qk8-w3-Szb"/>
+            </constraints>
+            <point key="canvasLocation" x="298" y="314"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
